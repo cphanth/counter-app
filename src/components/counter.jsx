@@ -2,12 +2,12 @@ import React, { Component } from "react";
 
 class Counter extends Component {
   state = {
-    count: 1,
+    count: 0,
   }; //state is an object that has properties or data that the component needs
   render() {
     return (
       <React.Fragment>
-        <span>{this.formatCount}</span>
+        <span>{this.formatCount()}</span>
         <button>Increment</button>
       </React.Fragment>
       /* this is a JSX expression, NOT returning a string
@@ -23,6 +23,10 @@ class Counter extends Component {
   formatCount() {
     const { count } = this.state;
     return count === 0 ? "Zero" : count;
+    //JSX expression get compiled to React elements
+    //JSX expressions are like JavaScript objects
+    //can change String to an expression
+    //return count === 0 ? <h1>Zero</h1> : count;
   }
 }
 
