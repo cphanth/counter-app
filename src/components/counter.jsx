@@ -5,15 +5,10 @@ class Counter extends Component {
     count: 0,
   }; //state is an object that has properties or data that the component needs
 
-  styles = {
-    fontSize: 50,
-    fontWeight: "bold",
-  };
-
   render() {
     return (
       <React.Fragment>
-        <span style={this.styles} className="badge badge-primary m-2">
+        <span style={{ fontSize: 10 }} className="badge badge-primary m-2">
           {this.formatCount()}
         </span>
         <button className="btn btn-secondary btn-sm">Increment</button>
@@ -32,6 +27,8 @@ class Counter extends Component {
 
       Sometimes best to use classes for performance and maintainability
       - sometimes you can apply style attribute to a specific element
+
+      Can also utilize in-line style attributes
       */
     );
   }
