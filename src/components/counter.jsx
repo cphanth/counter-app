@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Counter extends Component {
   state = {
     count: 0,
-    tags: [],
+    tags: ["tag1", "tag2", "tag3"],
   }; //state is an object that has properties or data that the component needs
 
   //helper method
