@@ -6,11 +6,9 @@ class Counter extends Component {
   }; //state is an object that has properties or data that the component needs
 
   render() {
-    let classes = this.getBadgeClasses();
-
     return (
       <React.Fragment>
-        <span className={classes}>{this.formatCount()}</span>
+        <span className={this.getBadgeClasses}>{this.formatCount()}</span>
         <button className="btn btn-secondary btn-sm">Increment</button>
       </React.Fragment>
       /* this is a JSX expression, NOT returning a string
