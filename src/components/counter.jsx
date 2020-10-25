@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Counter extends Component {
   state = {
     count: 0,
-    tags: ["tag1", "tag2", "tag3"],
+    tags: [],
   }; //state is an object that has properties or data that the component needs
 
   //helper method
@@ -26,6 +26,7 @@ class Counter extends Component {
       <React.Fragment>
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
         <button className="btn btn-secondary btn-sm">Increment</button>
+        {this.state.tags.length === 0 && "Please create a new tag!"}
         {this.renderTags()}
       </React.Fragment>
       /* this is a JSX expression, NOT returning a string
