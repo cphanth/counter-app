@@ -6,8 +6,8 @@ class Counter extends Component {
   }; //state is an object that has properties or data that the component needs
 
   render() {
-    const classes = "badge m-2";
-    classes += this.state.count === 0 ? "badge-warning" : "badge-primary";
+    const classes = "badge m-2 badge-";
+    classes += this.state.count === 0 ? "warning" : "primary";
 
     return (
       <React.Fragment>
