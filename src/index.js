@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.css'       //bootstrap helps our app look modern and sleek
 
 ReactDOM.render(
   <React.StrictMode>
