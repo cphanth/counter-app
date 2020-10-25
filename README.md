@@ -5,6 +5,36 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## About the Project
 The Counter App will be able to deploy similar functions that one would find in a simple e-commerce web application which includes having a navigation bar at the top which will also have a total items counter. Additionally, there are different items listed and the user can increment or decrement the desired quantity.
 
+I learned about these things in order to creater the Counter App:
+1. React components
+2. Embedding expressions
+3. Setting attributes
+4. Rendering classes dynamically
+5. Rendering lists
+6. Conditional Rendering
+7. Handling Events
+8. Binding events handlers
+9. Updating the state
+10. What happens when the state changes
+11. Passing event arguments
+12. Composing components
+13. Passing data to components
+14. Passing children
+15. Debugging React Apps
+16. Props vs State
+17. Raising and handling events
+18. Updating the state
+19. Single source of truth
+20. Removing the local state
+21. Multiple componenets in sync
+22. Lifting the state up
+23. Stateless functional components
+24. Destructuring arguements
+25. Lifecycle hooks
+26. Mounting phase
+27. Updating phase
+28. Unmounting phase
+
 ## Available Scripts
 
 In the project directory, you can run:
