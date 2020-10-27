@@ -21,6 +21,8 @@ class Counter extends Component {
     );
   }
 
+  //the constructor is used to bind two event handlers
+  //the handleIncrement() would not have access into the state object without this constructor
   //constructor() {
   //  super();
   //  this.handleIncrement = this.handleIncrement.bind(this);
@@ -28,6 +30,7 @@ class Counter extends Component {
 
   handleIncrement = () => {
     console.log("Increment Clicked", this);
+    this.setState({ count: this.state.count + 1 });
   };
 
   render() {
