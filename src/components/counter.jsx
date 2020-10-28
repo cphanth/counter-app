@@ -34,17 +34,12 @@ class Counter extends Component {
     console.log(product);
   };
 
-  //temporarily define method to handle passing an event argument
-  doHandleIncrement = () => {
-    this.handleIncrement({ id: 1 });
-  };
-
   render() {
     return (
       <React.Fragment>
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
         <button
-          onClick={this.doHandleIncrement}
+          onClick={() => this.handleIncrement({ id: 1 })}
           className="btn btn-secondary btn-sm"
         >
           Increment
