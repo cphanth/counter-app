@@ -35,7 +35,7 @@ class Counter extends Component {
   };
 
   //temporarily define method to handle passing an event argument
-  doHandleInrement = () => {
+  doHandleIncrement = () => {
     this.handleIncrement({ id: 1 });
   };
 
